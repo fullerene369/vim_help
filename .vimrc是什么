@@ -1,0 +1,61 @@
+# .vimrc是什么
+`.vimrc` 是 Vim 编辑器的配置文件，它允许用户定制 Vim 的行为和外观。你可以通过修改 `.vimrc` 文件来改变 Vim 的默认设置、定义快捷键、启用插件，或者加载其他的 Vim 脚本。
+
+### `.vimrc` 文件的作用：
+1. **设置选项**：你可以在 `.vimrc` 文件中设置各种选项，例如行号显示、自动缩进等。
+   
+   例如，设置显示行号：
+   ```vim
+   set number
+   ```
+
+2. **自定义快捷键**：通过在 `.vimrc` 中添加快捷键，可以提高编辑效率。
+
+   例如，设置 `jj` 作为退出插入模式的快捷键：
+   ```vim
+   inoremap jj <Esc>
+   ```
+
+3. **插件管理**：可以在 `.vimrc` 文件中设置插件管理器（如 Vundle 或 Plug）并安装插件，以增强 Vim 的功能。
+
+4. **启动时执行脚本**：`.vimrc` 还可以在 Vim 启动时自动加载自定义脚本或插件。
+
+### 如何创建和修改 `.vimrc` 文件：
+1. **创建 `.vimrc` 文件**：
+   - 在你的 home 目录下（Linux 或 macOS 中通常是 `~/.vimrc`，Windows 中是 `C:\Users\YourUsername\_vimrc`）创建或编辑 `.vimrc` 文件。
+
+2. **修改 `.vimrc` 文件**：
+   - 打开终端并运行以下命令编辑 `.vimrc` 文件：
+     ```bash
+     vim ~/.vimrc
+     ```
+
+3. **常见的 `.vimrc` 配置示例**：
+
+   - **启用行号**：
+     ```vim
+     set number
+     ```
+
+   - **自动缩进**：
+     ```vim
+     set smartindent
+     set tabstop=4
+     set shiftwidth=4
+     set expandtab
+     ```
+
+   - **启用语法高亮**：
+     ```vim
+     syntax enable
+     ```
+
+   - **设置搜索高亮**：
+     ```vim
+     set hlsearch
+     ```
+
+4. **保存并退出**：
+   - 保存 `.vimrc` 文件后，退出 Vim，Vim 会在每次启动时自动读取 `.vimrc` 文件并应用配置。
+
+通过 `.vimrc` 文件，你可以定制 Vim 的行为，使其更符合你的个人需求和工作流程。
